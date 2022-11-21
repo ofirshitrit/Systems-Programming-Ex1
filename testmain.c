@@ -3,7 +3,7 @@
 
 
 int main(){
-    int num = 3;
+    int num = 4;
 
     int result = isPalindrome(num);
     if(result == TRUE){
