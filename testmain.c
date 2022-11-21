@@ -3,13 +3,14 @@
 
 
 int main(){
-    int num = 2;
+    int num = 3;
 
     int result = isPalindrome(num);
     if(result == TRUE){
         printf("%d isPalindrom: TRUE\n", num);
     }else{
-       printf("%d isPalindrom: FALSE\n", num); 
+       printf("s%d isPalindrom: FALSE\n", num); 
     }
+    printf("test main done");
     return 1;
 }
