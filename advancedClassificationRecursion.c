@@ -1,11 +1,6 @@
 #include<stdio.h>
 #include "NumClass.h"
 
-// int reverse(int num)
-// {
-//     return reverseNum(num,0);
-// }
-
 int reverseNum(int num,int reverseSoFar){
     if(num==0)return reverseSoFar;
     return reverseNum(num/10,reverseSoFar*10+num%10);
