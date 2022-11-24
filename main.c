@@ -2,28 +2,19 @@
 #include "NumClass.h"
 
 
-int main(int argc,char *argv[])
+int main()
 {
-    int info;
-    int first = -1;
-    int second = -1; 
-    
-    while (scanf("%d",&info) == 1)
-    {
-        if (first == -1)
-        {
-            first = info;
-        }else{
-            second = info;
-        }
-        
-    }
+    int num1,num2;
 
-    
-    
+    scanf("%d", &num1);
+    scanf("%d", &num2);
+    int min=0;
+    int max=0;
+    min=num1;
+    max=num2;
     
     printf("The Armstrong numbers are:");
-    for(int i=first;i<=second;i++){
+    for(int i=min;i<=max;i++){
         if(isArmstrong(i)){
             printf(" %d",i);
         }
@@ -31,7 +22,7 @@ int main(int argc,char *argv[])
     printf("\n");
 
     printf("The Palindromes are:");
-     for(int i=first;i<=second;i++){
+     for(int i=min;i<=max;i++){
         if(isPalindrome(i)){
             printf(" %d",i);
         }
@@ -40,7 +31,7 @@ int main(int argc,char *argv[])
 
 
     printf("The Prime numbers are:");
-    for(int i=first;i<=second;i++){
+    for(int i=min;i<=max;i++){
         if(isPrime(i)){
             printf(" %d" ,i);
         }
@@ -49,14 +40,14 @@ int main(int argc,char *argv[])
 
     
     printf("The Strong numbers are:");
-    for(int i=first;i<=second;i++){
+    for(int i=min;i<=max;i++){
         if(isStrong(i)){
             printf(" %d",i);
         }
     }
     printf("\n");
     
-   
+   return 1;
 
 }
 
