@@ -6,8 +6,7 @@ int main()
 {
     int num1,num2;
 
-    scanf("%d", &num1);
-    scanf("%d", &num2);
+    scanf("%d%d", &num1,&num2);
     int min=0;
     int max=0;
     min=num1;
@@ -47,7 +46,7 @@ int main()
     }
     printf("\n");
     
-   return 1;
+   return 0;
 
 }
 
